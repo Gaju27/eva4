@@ -39,7 +39,7 @@
   <h3 align="center">Yolo Object Detection</h3>
 
   <p align="center">
-    Full Credit to Pysource
+    Credit goes to Pysource
     <br />
     <a href="https://pysource.com/2019/06/27/yolo-object-detection-using-opencv-with-python/"><strong>Explore More »</strong></a>
     <br />
