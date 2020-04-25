@@ -1,6 +1,6 @@
 # YoloV3
 ________
-YoloV3 Simplified for training on Colab with custom dataset. 
+YoloV3 Simplified for training on Colab with custom dataset (Iron Man Dataset). 
 
 _A Collage of Training images_
 ![image](https://github.com/Gaju27/eva4/blob/master/S13/YoloV3_Iron_man_detection/train_batch0.png)
