@@ -82,7 +82,9 @@ Full Credit goes to ![Pysource.](https://pysource.com/2019/06/27/yolo-object-det
 
 ## Prerequisites
 
-* Python
+* Jupyter notebook
+* Python 3 and Above
+* OpenCV
 
 <!-- USAGE EXAMPLES -->
 ## Usage
