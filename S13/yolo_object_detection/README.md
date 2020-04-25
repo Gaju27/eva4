@@ -57,8 +57,8 @@
 ## Table of Contents
 
 * [About the Project](#about-the-project)
-* [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
+* [Credits](#credits)
+* [Prerequisites](#prerequisites)
 * [Usage](#usage)
 * [License](#license)
 * [Contact](#contact)
@@ -75,7 +75,7 @@
   We’re going to learn in this tutorial YOLO object detection. Yolo is a deep learning algorythm which came out on may 2016 and it became quickly so popular because it’s so fast compared with the previous deep learning algorythm.
   With yolo we can detect objects at a relatively high speed. With a GPU we would be able to process over 45 frames/second while with a CPU around a frame per second.
 
-<!-- GETTING STARTED -->
+<!-- CREDITS -->
 ## Credits
 
 Full Credit goes to ![Pysource.](https://pysource.com/2019/06/27/yolo-object-detection-using-opencv-with-python/)
