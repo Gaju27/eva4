@@ -3,10 +3,10 @@ ________
 YoloV3 Simplified for training on Colab with custom dataset. 
 
 _A Collage of Training images_
-![image](https://github.com/theschoolofai/YoloV3/blob/master/output/train.png)
+![image](https://github.com/Gaju27/eva4/blob/master/S13/YoloV3_Iron_man_detection/train_batch0.png)
 
 
-We have added a very 'smal' Coco sample imageset in the folder called smalcoco. This is to make sure you can run it without issues on Colab.
+We have added a very 'small' Coco sample imageset in the folder called smalcoco. This is to make sure you can run it without issues on Colab.
 
 Full credit goes to [this](https://github.com/ultralytics/yolov3), and if you are looking for much more detailed explainiation and features, please refer to the original [source](https://github.com/ultralytics/yolov3). 
 
@@ -28,12 +28,12 @@ For custom dataset:
 data
   --customdata
     --images/
-      --img001.jpg
-      --img002.jpg
+      --i00000.jpg
+      --i00001.jpg
       --...
     --labels/
-      --img001.txt
-      --img002.txt
+      --i00000.txt
+      --i00001.txt
       --...
     custom.data #data file
     custom.names #your class names
@@ -48,16 +48,16 @@ data
 ```
 6. As you it a poor idea to keep test and train data same, but the point of this repo is to get you up and running with YoloV3 asap. You'll probably do a mistake in writing to custom.txt file. This is how our file looks like (please note the .s and /s):
 ```
-./data/customdata/images/img001.jpg
-./data/customdata/images/img002.jpg
-./data/customdata/images/img003.jpg
+./data/customdata/images/i00000.jpg
+./data/customdata/images/i00001.jpg
+./data/customdata/images/i00002.jpg
 ...
 ```
-7. You need to add custom.names file as you can see above. For our example, we downloaded images of Walle. Our custom.names file look like this:
+7. You need to add custom.names file as you can see above. For our example, we downloaded images of Iron_Man. Our custom.names file look like this:
 ```
-walle
+Iron_Man
 ```
-8. Walle above will have a class index of 0. 
+8. Iron_Man above will have a class index of 0. 
 9. For COCO's 80 classes, VOLOv3's output vector has 255 dimensions ( (4+1+80)*3). Now we have 1 class, so we would need to change it's architecture.
 10. Copy the contents of 'yolov3-spp.cfg' file to a new file called 'yolov3-custom.cfg' file in the data/cfg folder. 
 11. Search for 'filters=255' (you should get entries entries). Change 255 to 18 = (4+1+1)*3
@@ -75,4 +75,4 @@ As you can see in the collage image above, a lot is going on, and if you are cre
 **Results**
 After training for 300 Epochs, results look awesome!
 
-![image](https://github.com/theschoolofai/YoloV3/blob/master/output/download.jpeg)
+![image](https://github.com/Gaju27/eva4/blob/master/S13/YoloV3_Iron_man_detection/output/i000012.jpg)
