@@ -1,0 +1,4 @@
+classes=80
+train=data/iron_man_dataset/iron_man_dataset.txt
+valid=data/iron_man_dataset/iron_man_dataset.txt
+names=data/coco.names
