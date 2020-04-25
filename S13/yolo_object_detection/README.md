@@ -98,7 +98,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Gajanan Ganjigatti - [@twitter_handle](https://twitter.com/Gajucg)
+Gajanan Ganjigatti - [@twitter](https://twitter.com/Gajucg)
 
 Project Link: [gaju27/eva4](https://github.com/gaju27/eva4)
 
@@ -116,7 +116,7 @@ Project Link: [gaju27/eva4](https://github.com/gaju27/eva4)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[mentor-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=flat-square
+[mentor-shield]: https://img.shields.io/badge/Mentor-mentor-yellowgreen
 [mentor-url]: https://www.linkedin.com/in/rohanshravan/
 [forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=flat-square
 [forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
