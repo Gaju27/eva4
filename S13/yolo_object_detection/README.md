@@ -80,14 +80,14 @@
 
 Full Credit goes to ![Pysource.](https://pysource.com/2019/06/27/yolo-object-detection-using-opencv-with-python/)
 
-### Prerequisites
+## Prerequisites
 
 * Python
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-_For more examples, please refer to the [Documentation](https://pysource.com/2019/06/27/yolo-object-detection-using-opencv-with-python/)
+For more examples, please refer to the [Documentation](https://pysource.com/2019/06/27/yolo-object-detection-using-opencv-with-python/)
 
 <!-- LICENSE -->
 ## License
