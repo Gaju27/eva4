@@ -56,7 +56,7 @@
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
-* [About the Project](#about-the-project)
+* [About the YOlO](#about-yolo-object-detection)
 * [Credits](#credits)
 * [Prerequisites](#prerequisites)
 * [Usage](#usage)
@@ -66,8 +66,8 @@
 
 
 
-<!-- ABOUT THE PROJECT -->
-## About The YOLO object detection
+<!-- ABOUT THE YOLO -->
+## About YOLO object detection
 
 [![Pysource][product-screenshot]](https://pysource.com/2019/06/27/yolo-object-detection-using-opencv-with-python/)
 
@@ -107,8 +107,8 @@ Project Link: [gaju27/eva4](https://github.com/gaju27/eva4)
 <!-- MENTORS -->
 ## Mentors
 
-* []() Rohan Shravan ![linked-in] (https://www.linkedin.com/in/rohanshravan/)
-* []() Pysource ![link] (https://pysource.com/2019/06/27/yolo-object-detection-using-opencv-with-python/)
+* [Rohan Shravan](https://www.linkedin.com/in/rohanshravan/)
+* [Pysource](https://pysource.com/2019/06/27/yolo-object-detection-using-opencv-with-python/)
 
 
 
