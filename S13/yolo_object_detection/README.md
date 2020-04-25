@@ -98,7 +98,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Gajanan Ganjigatti - [@twitter](https://twitter.com/Gajucg)
+Gajanana Ganjigatti - [Gaju_on_twitter](https://twitter.com/Gajucg)
 
 Project Link: [gaju27/eva4](https://github.com/gaju27/eva4)
 
