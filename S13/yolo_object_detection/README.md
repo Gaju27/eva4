@@ -56,7 +56,7 @@
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
-* [About the YOlO](#about-yolo-object-detection)
+* [About the YOLO](#about-yolo-object-detection)
 * [Credits](#credits)
 * [Prerequisites](#prerequisites)
 * [Usage](#usage)
