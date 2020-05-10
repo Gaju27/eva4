@@ -65,7 +65,7 @@
 * [Code Changes](#code-changes)
 * [License](#license)
 * [Contact](#contact)
-* [Mentors](#mentors)
+* [Mentor](#mentor)
 
 
 
@@ -94,7 +94,7 @@
 * [Jupyter](https://jupyter.org/install) notebook
 * [Colab](http://colab.research.google.com/)
 * [Python 3](https://www.python.org/downloads/) and Above
-* [PIL] https://pypi.org/project/Pillow/2.2.1/
+* [PIL](https://pypi.org/project/Pillow/2.2.1/)
 * [GIMP](https://www.gimp.org/downloads/) 
 * [zip-files](https://pypi.org/project/zip-files/)
 
@@ -104,7 +104,20 @@
 Till now we have just prepared  [Foregroud](), [foreground Mask]() and [Background]() Images. :zzz: Here is the [fg_bg.ipynb](https://github.com/Gaju27/eva4/blob/master/S14/fg_bg.ipynb) big fun starts. I have to generate 400k Images by randomly placing foreground images over background images. `Background (100) X Foreground (200) x Random Placing (20) times= 400k Images ~2gb size`
 Now i have to generate using [google colab](http://colab.research.google.com/) becasue google colab gives us GPU for free. Learn More about colab [here](https://www.tutorialspoint.com/google_colab/index.htm)
     
-    * Understand Code 
+   ### Lets Understand code 
+      1. Import all the required packages
+      2. Mount gdrive
+      3. Read Background Images from Gdrive folder
+      4. Now Open zip with `append` for every 4080 file because I have foreground images 204x20=4080
+      5. Read Foreground Images (204) and resize to 100x100
+      6. Overlay Randomly Foreground Images over Background and save for 20 Iterations
+      7. Create Mask for Foregroudn Images for same randomly called positions and save for 20 Iterations
+      8. Now Increament zip index for 1 for each background Image
+      9. Close zip file after completion for 100 background Images.
+  
+  :boom: Note-->> If you forget to close zip file it will be corrupted :poop:
+      
+     
 
 <!-- LICENSE -->
 ## License
@@ -121,13 +134,10 @@ Project Link: [gaju27/eva4](https://github.com/gaju27/eva4)
 
 
 
-<!-- MENTORS -->
-## Mentors
+<!-- MENTOR -->
+## Mentor
 
 * [Rohan Shravan](https://www.linkedin.com/in/rohanshravan/)
-
-
-
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
