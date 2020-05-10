@@ -70,24 +70,22 @@
 
 
 <!-- DATASET PREPARATION -->
-## Preparing Dataset
-      
-   -  #### Download Images
+## Preparing Dataset    
+   -  #### Download Images 
+            Downloaded Human pose images as Foreground (100) and shopping mall as background Image (100).
+   
       <!-- FOREGROUND IMAGES -->
-   -  #### Foreground Images
-         <!-- BACKGROUND IMAGES -->
+   -  #### Foreground Images 
+         1. The downloaded images are of different formats (.jfif,jpeg,.png,.webp), hence I [Renamed and converted](https://github.com/Gaju27/eva4/blob/master/S14/Convert_png_rename.py) them to .png. 
+         2. I used [GIMP](https://www.gimp.org/downloads/) tool to remove backgroud in these images. Please see [Tutorial](https://www.google.com/search?safe=active&rlz=1C1GCEU_enIN883IN883&sxsrf=ALeKk030ZpJhWSmJ1h5Xn54q3aUjptyRJQ%3A1589105142609&ei=9tG3XtLnJMS4sgXB16nICg&q=gimp+remove+background&oq=gimp+remo&gs_lcp=CgZwc3ktYWIQAxgAMgQIIxAnMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAOgQIABBHOgcIABAUEIcCOgoIABCDARAUEIcCOgUIABCDAToFCAAQkQJQivoDWJmIBGD4kARoAHABeACAAeMCiAG6GpIBBDMtMTCYAQCgAQGqAQdnd3Mtd2l6&sclient=psy-ab#kpvalbx=_O9K3XvqZOc_EswX12ZSADQ51) how to remove background from images
+         3. I have [Flipped](https://github.com/Gaju27/eva4/blob/master/S14/Flip_Images.py) these 100 Images Horizantally. Now I have [200 Foreground](https://github.com/Gaju27/eva4/tree/master/S14/Foreground) Images.
+         4. I have generated [Mask Images](https://github.com/Gaju27/eva4/tree/master/S14/Foreground_Mask) for these 200 Foreground Images. [mask](https://github.com/Gaju27/eva4/blob/master/S14/Flip_Images.py) 
+   
+      <!-- BACKGROUND IMAGES -->
    -  #### Backgroud Images
 
 [![Pysource][product-screenshot]](https://pysource.com/2019/06/27/yolo-object-detection-using-opencv-with-python/)
 
-**Preparing Dataset for Foreground and Background Images:**
-  We’re going to learn in this tutorial YOLO object detection. Yolo is a deep learning algorythm which came out on may 2016 and it became quickly so popular because it’s so fast compared with the previous deep learning algorythm.
-  With yolo we can detect objects at a relatively high speed. With a GPU we would be able to process over 45 frames/second while with a CPU around a frame per second.
-
-<!-- CREDITS -->
-## Credits
-
-Full Credit goes to ![Pysource.](https://pysource.com/2019/06/27/yolo-object-detection-using-opencv-with-python/)
 
 ## Prerequisites
 
@@ -139,4 +137,4 @@ Project Link: [gaju27/eva4](https://github.com/gaju27/eva4)
 [license-url]: https://github.com/Gaju27/EVA/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/gajanana-ganjigatti/
-[product-screenshot]: 
+[convert-rename]: https://github.com/Gaju27/eva4/blob/master/S14/Convert_png_rename.py
