@@ -72,33 +72,39 @@
 <!-- DATASET PREPARATION -->
 ## Preparing Dataset    
    -  #### Download Images 
-            Downloaded Human pose images as Foreground (100) and shopping mall as background Image (100).
+         Downloaded Human pose images as Foreground (100) and shopping mall as background Image (100).
    
       <!-- FOREGROUND IMAGES -->
    -  #### Foreground Images 
-         1. The downloaded images are of different formats (.jfif,jpeg,.png,.webp), hence I [Renamed and converted](https://github.com/Gaju27/eva4/blob/master/S14/Convert_png_rename.py) them to .png. 
-         2. I used [GIMP](https://www.gimp.org/downloads/) tool to remove backgroud in these images. Please see [Tutorial](https://www.google.com/search?safe=active&rlz=1C1GCEU_enIN883IN883&sxsrf=ALeKk030ZpJhWSmJ1h5Xn54q3aUjptyRJQ%3A1589105142609&ei=9tG3XtLnJMS4sgXB16nICg&q=gimp+remove+background&oq=gimp+remo&gs_lcp=CgZwc3ktYWIQAxgAMgQIIxAnMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAOgQIABBHOgcIABAUEIcCOgoIABCDARAUEIcCOgUIABCDAToFCAAQkQJQivoDWJmIBGD4kARoAHABeACAAeMCiAG6GpIBBDMtMTCYAQCgAQGqAQdnd3Mtd2l6&sclient=psy-ab#kpvalbx=_O9K3XvqZOc_EswX12ZSADQ51) how to remove background from images
-         3. I have [Flipped](https://github.com/Gaju27/eva4/blob/master/S14/Flip_Images.py) these 100 Images Horizantally. Now I have [200 Foreground](https://github.com/Gaju27/eva4/tree/master/S14/Foreground) Images.
-         4. I have generated [Mask Images](https://github.com/Gaju27/eva4/tree/master/S14/Foreground_Mask) for these 200 Foreground Images. [mask](https://github.com/Gaju27/eva4/blob/master/S14/Flip_Images.py) 
-   
+         1. Remove [Duplicate](https://github.com/Gaju27/eva4/blob/master/S14/remove_dup_images.ipynb) Images if any
+         2. The downloaded images are of different formats (.jfif,jpeg,.png,.webp), hence I [Renamed and converted](https://github.com/Gaju27/eva4/blob/master/S14/Convert_png_rename.py) them to .png. 
+         3. I used [GIMP](https://www.gimp.org/downloads/) tool to remove backgroud in these images. Please see [Tutorial](https://www.google.com/search?safe=active&rlz=1C1GCEU_enIN883IN883&sxsrf=ALeKk030ZpJhWSmJ1h5Xn54q3aUjptyRJQ%3A1589105142609&ei=9tG3XtLnJMS4sgXB16nICg&q=gimp+remove+background&oq=gimp+remo&gs_lcp=CgZwc3ktYWIQAxgAMgQIIxAnMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAOgQIABBHOgcIABAUEIcCOgoIABCDARAUEIcCOgUIABCDAToFCAAQkQJQivoDWJmIBGD4kARoAHABeACAAeMCiAG6GpIBBDMtMTCYAQCgAQGqAQdnd3Mtd2l6&sclient=psy-ab#kpvalbx=_O9K3XvqZOc_EswX12ZSADQ51) how to remove background from images
+         4. I have [Flipped](https://github.com/Gaju27/eva4/blob/master/S14/Flip_Images.py) these 100 Images Horizantally. Now I have [200 Foreground](https://github.com/Gaju27/eva4/tree/master/S14/Foreground) Images.
+         5. I have generated [Mask Images](https://github.com/Gaju27/eva4/tree/master/S14/Foreground_Mask) for these 200 Foreground Images. [mask](https://github.com/Gaju27/eva4/blob/master/S14/Flip_Images.py) 
+
       <!-- BACKGROUND IMAGES -->
    -  #### Backgroud Images
-
-[![Pysource][product-screenshot]](https://pysource.com/2019/06/27/yolo-object-detection-using-opencv-with-python/)
-
+         1. Remove [Duplicate](https://github.com/Gaju27/eva4/blob/master/S14/remove_dup_images.ipynb) Images if any
+         2. The downloaded images are of different formats (.jfif,jpeg,.png,.webp), hence I [Renamed and converted](https://github.com/Gaju27/eva4/blob/master/S14/Convert_png_rename.py) them to .png. 
+         3. [Resized](https://github.com/Gaju27/eva4/blob/master/S14/resize_250-250.py) Images to 250x250
+         
 
 ## Prerequisites
 
-* Jupyter notebook
-* Colab
-* Python 3 and Above
-* PIL
-* GIMP
+* [Jupyter](https://jupyter.org/install) notebook
+* [Colab](http://colab.research.google.com/)
+* [Python 3](https://www.python.org/downloads/) and Above
+* [PIL] https://pypi.org/project/Pillow/2.2.1/
+* [GIMP](https://www.gimp.org/downloads/) 
+* [zip-files](https://pypi.org/project/zip-files/)
 
 <!-- CODE CHANGES -->
 ## Code Changes
 
-For more examples, please refer to the [Documentation](https://pysource.com/2019/06/27/yolo-object-detection-using-opencv-with-python/)
+Till now we have just prepared  [Foregroud](), [foreground Mask]() and [Background]() Images. :zzz: Here is the [fg_bg.ipynb](https://github.com/Gaju27/eva4/blob/master/S14/fg_bg.ipynb) big fun starts. I have to generate 400k Images by randomly placing foreground images over background images. `Background (100) X Foreground (200) x Random Placing (20) times= 400k Images ~2gb size`
+Now i have to generate using [google colab](http://colab.research.google.com/) becasue google colab gives us GPU for free. Learn More about colab [here](https://www.tutorialspoint.com/google_colab/index.htm)
+    
+    * Understand Code 
 
 <!-- LICENSE -->
 ## License
