@@ -1,10 +1,8 @@
 import glob
 
 from PIL import Image
-
-# path = "C:/Users/gajanana_ganjigatti/Documents/Gaju_data/Quest/eva4/S14-15/BACKUP/Captures/*.*"
-save_dir = "C:/Users/gajanana_ganjigatti/Documents/Gaju_data/Quest/eva4/S14-15/Mask/"
-path = "C:/Users/gajanana_ganjigatti/Documents/Gaju_data/Quest/eva4/S14-15/Mask/*.*"
+save_dir="/mask_final/"
+path = "/Mask/*.*"
 # i = 1
 for file in glob.glob(path):
     im = Image.open(file, 'r').convert('RGBA')
